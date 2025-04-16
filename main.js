@@ -82,8 +82,8 @@ class TimeLine {
             const modal = e.target.closest(".modal");
             const coordsInput = modal.querySelector(".coords-input");
             const coordsInputValue = coordsInput.value;
-            const testCaseOne = /^-?\d{1,2}.\d{5}, ?-?\d{1,2}.\d{5}$/gm.test(coordsInputValue);
-            const testCaseTwo = /^\[-?\d{1,2}.\d{5}, ?-?\d{1,2}.\d{5}\]$/gm.test(coordsInputValue);
+            const testCaseOne = /^-?\d{1,2}\.\d{5}, ?-?\d{1,2}\.\d{5}$/gm.test(coordsInputValue);
+            const testCaseTwo = /^\[-?\d{1,2}\.\d{5}, ?-?\d{1,2}\.\d{5}\]$/gm.test(coordsInputValue);
             if (testCaseOne || testCaseTwo) {
               modal.remove();
               const options = {
