@@ -168,7 +168,7 @@ class TimeLine {
           const audio = document.createElement("audio");
           const recorder = new MediaRecorder(stream);
           const chunks = [];
-          recorder.addEventListener("dataavaliable", e => {
+          recorder.addEventListener("dataavailable", e => {
             chunks.push(e.data);
           });
           recorder.addEventListener("stop", () => {
@@ -348,7 +348,7 @@ class TimeLine {
           const video = document.createElement("video");
           const recorder = new MediaRecorder(stream);
           const chunks = [];
-          recorder.addEventListener("dataavaliable", e => {
+          recorder.addEventListener("dataavailable", e => {
             chunks.push(e.data);
           });
           recorder.addEventListener("stop", () => {
