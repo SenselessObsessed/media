@@ -1,0 +1,130 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.time-line {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 600px;
+  height: 900px;
+}
+
+.input-messages {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 30px;
+  width: 90%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.messages-container {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  min-width: 549px;
+}
+
+.date {
+  min-width: 120px;
+}
+
+.micro-btn,
+.video-btn,
+.add-audio,
+.cancel-audio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.video-btn {
+  bottom: 25px;
+  right: 35px;
+}
+
+.micro-btn {
+  bottom: 25px;
+  right: 65px;
+}
+
+.btn-start-audio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.modal {
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  left: 40vw;
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.coords-input {
+  height: 30px;
+  width: 490px;
+}
+
+.cancel,
+.ok {
+  cursor: pointer;
+  margin-right: 10px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.btn-block {
+  justify-content: end;
+  display: flex;
+  margin-top: 10px;
+}
+
+.btn-block-in-audio {
+  top: 853px;
+  right: 75px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
+.add-audio {
+  right: 50px;
+}
+
+.cancel-audio {
+  left: 50px;
+}
